@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+  <html lang="en">
+ <head>
+     <meta charset="utf-8">
+     <title> 7</title>
+     <link rel="stylesheet" type="text/css" href="7.css">
+ </head>
+ 
+ <body id="home">
+  <header id="logo">
+   <h1> The web's #1 resource for smoothie recipes</h1>
+  </header>
+  
+  <nav>
+   <ul>
+    <li><a class="nav-home" href="index.html">Home</a></li>
+    <li><a class="nav-about" href="2.html"> About Us</a></li>
+    <li><a class="nav-contact" href="3.html"> Contact Us </a></li>
+    <li><a class ="nav-forum" href="4.html"> Forum</a></li>
+    <li><a class="nav-submit" href="5.html">Submit</a></li>
+   </ul>
+  </nav>
+  
+  <div id="main">
+  <aside id="left">
+    <h1> New Additions</h1>
+    <p>Mỗi chiếc điện thoại Vsmart đến tay người tiêu dùng phải trải qua hàng trăm bài test đặc biệt trong các phòng lab hiện đại hàng đầu thế giới của VinSmart, để đảm bảo chất lượng tốt nhất khi đến tay khách hàng.</p>
+    <h2>The Funky Orange</h2>
+    <figure>
+    <img src="https://vtv1.mediacdn.vn/thumb_w/650/2019/11/26/anh-test-vsm-15747374430121625356031.jpg" alt="phone" width="250" height="100">
+    <figcaption>
+    <figcaption>Thả cho rơi tự do xuống mặt sàn bê tông; ép uốn cong ở mức tối đa; bấm phím hàng vạn lần; thử khả năng "sinh tồn" trong các điều kiện tới 80 độ C rồi hạ sốc đến âm 40 độ C, hay trong môi trường bụi bặm nhất và ẩm ướt nhất… </figcaption>
+    </figure>  
+  </aside>
+  
+  <section id="right">
+   <h1>Contact Us </h1>
+   
+   <form id="contactform" action="" method="post">
+    <fieldset>
+    <legend> Personal Information</legend> 
+    <label for="firstname">First name:<input id="firstname" type="text" name="firstname" placeholder="Enter your first name" required autofocus autocomplete="off"></label>
+    <label for="lastname">Last name:<input id="lastname" tyle="text" name="lastname" placeholder="Enter your last name" required autofocus></label>
+    <label for="email"> Email:<input id="email" type="email" name="customeremail"></label>
+    <label for="website"> Website:<input id="website" type="url" name="customerwebsite"></label>
+    </fieldset> 
+    
+    <fieldset>
+     <legend> Additional Imformation</legend>
+     <p> Would you like to subcribe e-mail newletter</p>
+    <ol>
+     <li> <input name="subcribe" id="yes" type="radio">
+     <label for="yes"> Yes</label></li>
+     <li><input name="subcribe" id="no" type="radio">
+     <label for="no"> No</label></li>
+    </ol>
+    </fieldset>
+    <input type="submit" value="Go">
+    
+   </form>
+   <form id="orderform" action="" method="post">
+    <fieldset>
+    <legend> Order free copies of smoothie recipes</legend>
+    <input type="text" list="smoothierecipes">
+    <datalist id="smoothierecipes"> 
+      <option value="Mago Smoothie"> Mango smoothie</option>
+      <option value="Strawberry Smoothie"> Strawberry</option>
+      <option value="Banana smoothie" > Banana smoothie</option>
+    </datalist>
+    <p>Choose the number of books you would like to recieve</p>
+    <input type="number" min="1" max="4" value="2"><br/><br/><br/><br/><br/><br/>
+    <input type="range" min="1" max="100" value="30" step="10" onchange="showValue(value)">
+    
+    
+    </fieldset><br/><br/>
+     <input type="submit" value="Go">
+  </section>
+
+
+  <footer id="footer">
+   <p> Coppy right in 2019 ,FPT university , Vu Anh Tuan </p>
+   <p> sdt: 0337708048</p>
+  </footer>
+ 
+ </body>
+</html>
+  
